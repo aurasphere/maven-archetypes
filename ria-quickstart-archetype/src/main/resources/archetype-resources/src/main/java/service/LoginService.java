@@ -50,7 +50,7 @@ public class LoginService {
 	/**
 	 * Logger.
 	 */
-	private final static Logger LOG = LoggerFactory.getLogger(ReportsService.class);
+	private final static Logger LOG = LoggerFactory.getLogger(LoginService.class);
 
 	/**
 	 * Dao for users.
@@ -108,7 +108,7 @@ public class LoginService {
 		LOG.trace("ReportsService.createUser(*)");
 		// Input validations.
 		String email = user.getEmail();
-		Objects.requireNonNull(user;
+		Objects.requireNonNull(user);
 		Objects.requireNonNull(user.getName());
 		Objects.requireNonNull(user.getSurname());
 		Objects.requireNonNull(email);

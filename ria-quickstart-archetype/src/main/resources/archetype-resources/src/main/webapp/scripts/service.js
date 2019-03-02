@@ -14,4 +14,4 @@ app.service("navigationHelper", function($location) {
 	// deployed on root path, otherwise add 
 	// the app context.
 	this.appBasePath = "/";
-}
+});

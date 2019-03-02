@@ -129,7 +129,7 @@ public class BaseRestResponse implements Serializable {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		BaseReportsRestResponse other = (BaseReportsRestResponse) obj;
+		BaseRestResponse other = (BaseRestResponse) obj;
 		if (errorMessage == null) {
 			if (other.errorMessage != null)
 				return false;

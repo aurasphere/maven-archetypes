@@ -12,7 +12,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler;
 
 import ${package}.model.User;
-import ${package}.AuthenticationResponse;
+import ${package}.rest.model.AuthenticationResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**

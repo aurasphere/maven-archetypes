@@ -87,7 +87,7 @@ app.controller("passwordRecoveryController", function($scope, $routeParams,
 	}
 });
 
-app.controller('navbarController', function($scope, $http, $location. navigationHelper) {
+app.controller('navbarController', function($scope, $http, $location, navigationHelper) {
 	// Performs logout.
 	$scope.doLogout = function() {
 		$http.post(navigationHelper.appBasePath + "/rest/logout").then(function() {

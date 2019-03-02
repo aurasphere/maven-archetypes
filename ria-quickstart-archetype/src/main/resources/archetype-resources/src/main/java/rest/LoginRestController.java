@@ -1,7 +1,6 @@
 package ${package}.rest;
 
 import java.io.IOException;
-import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,7 +17,7 @@ import ${package}.model.User;
 import ${package}.rest.model.BaseRestResponse;
 import ${package}.rest.model.ConfirmAccountRequest;
 import ${package}.rest.model.ConfirmAccountResponse;
-import ${package}.rest.model.CreateUserResponse;;
+import ${package}.rest.model.CreateUserResponse;
 import ${package}.rest.model.PasswordRecoveryRequest;
 import ${package}.rest.model.PasswordRecoveryResponse;
 import ${package}.service.LoginService;
@@ -35,7 +34,7 @@ public class LoginRestController {
 	/**
 	 * Logger.
 	 */
-	private final static Logger LOG = LoggerFactory.getLogger(UserRestController.class);
+	private final static Logger LOG = LoggerFactory.getLogger(LoginRestController.class);
 
 	/**
 	 * The service.
@@ -65,7 +64,7 @@ public class LoginRestController {
 	 * @return the outcome of the operation
 	 */
 	@GetMapping(value = "/sendAccountActivationEmail", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-	public BasesRestResponse sendAccountActivationEmail(@RequestParam("email") String email) {
+	public BaseRestResponse sendAccountActivationEmail(@RequestParam("email") String email) {
 		LOG.info("UserRestController.sendAccountActivationEmail({})", email);
 		service.sendConfirmationEmailAgain(email);
 		return new BaseRestResponse(true, "Email sent");
