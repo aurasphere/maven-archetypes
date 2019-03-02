@@ -1,0 +1,75 @@
+<archetype-descriptor
+	xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
+	name="maven-library-archetype">
+	<requiredProperties>
+		<requiredProperty key="description">
+			<defaultValue>A Java library.</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="projectUrl">
+			<defaultValue>https://github.com/aurasphere/${artifactId}</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="minJavaVersion">
+			<defaultValue>1.5</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="licenseName">
+			<defaultValue>MIT License</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="licenseUrl">
+			<defaultValue>https://raw.githubusercontent.com/aurasphere/${artifactId}/master/LICENSE</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="organizationName">
+			<defaultValue>Aurasphere</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="organizationUrl">
+			<defaultValue>http://www.aurasphere.co</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="developerFullName">
+			<defaultValue>Donato Rimenti</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="developerEmail">
+			<defaultValue>donatohan.rimenti@gmail.com</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="scmUrl">
+			<defaultValue>https://github.com/aurasphere/${artifactId}</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="scmConnection">
+			<defaultValue>scm:git:git://github.com/aurasphere/${artifactId}.git</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="developerConnection">
+			<defaultValue>scm:git:git@github.com:aurasphere/${artifactId}.git</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="releaseTag">
+			<defaultValue>${artifactId}-1.0.0</defaultValue>
+		</requiredProperty>
+	</requiredProperties>
+
+	<fileSets>
+		<fileSet encoding="UTF-8" filtered="true" packaged="true">
+			<directory>src/main/java</directory>
+			<includes>
+				<include>**/*</include>
+			</includes>
+		</fileSet>
+		<fileSet encoding="UTF-8">
+			<directory>src/main/resources</directory>
+			<includes>
+				<include>**/*</include>
+			</includes>
+		</fileSet>
+		<fileSet encoding="UTF-8" packaged="true">
+			<directory>src/test/java</directory>
+			<includes>
+				<include>**/*</include>
+			</includes>
+		</fileSet>
+		<fileSet encoding="UTF-8" filtered="true">
+			<directory>src/test/resources</directory>
+			<includes>
+				<include>**/*</include>
+			</includes>
+		</fileSet>
+	</fileSets>
+
+</archetype-descriptor>

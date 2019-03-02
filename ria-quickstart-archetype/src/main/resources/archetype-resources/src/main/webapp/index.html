@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
+<title>${artifactId}</title>
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	
+<link rel="stylesheet" href="styles/style.css">
+
+<script type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.7/angular.min.js"></script>
+<script type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.7/angular-route.min.js"></script>
+<script type="text/javascript"
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+<script type="text/javascript" src="scripts/app.js"></script>
+<script type="text/javascript" src="scripts/service.js"></script>
+<script type="text/javascript" src="scripts/controller.js"></script>
+<script type="text/javascript" src="scripts/directive.js"></script>
+</head>
+
+<body data-ng-app="${artifactId}"
+	data-ng-controller="${artifactId}Controller">
+	<div data-ng-include="'views/navbar.html'"></div>
+	<div data-ng-view class="container-fluid text-dark p-1 viewport-height"></div>
+</body>
+
+</html>

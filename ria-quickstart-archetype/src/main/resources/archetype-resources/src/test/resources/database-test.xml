@@ -1,0 +1,27 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans     
+   http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+   http://www.springframework.org/schema/data/mongo 
+   http://www.springframework.org/schema/data/mongo/spring-mongo-1.2.xsd
+   http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
+
+	<bean
+		class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor" />
+
+	<mongo:repositories base-package="${package}.dao"
+		mongo-template-ref="mongoTemplate" />
+
+	<bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+		<constructor-arg name="mongoDbFactory" ref="mongoDbFactory" />
+		<constructor-arg name="mongoConverter" ref="mappingConverter" />
+	</bean>
+
+	<!-- Development environment configuration -->
+	<beans profile="DEV, default">
+		<mongo:db-factory host="" port=""
+			dbname="" username="" password="" write-concern="SAFE" />
+	</beans>
+
+</beans>

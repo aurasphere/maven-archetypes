@@ -1,0 +1,24 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>it.edenred.archetypes</groupId>
+	<artifactId>spring-web-archetype</artifactId>
+	<version>1.0.1-SNAPSHOT</version>
+
+	<scm>
+		<url>scm:svn:${SVN_REPO}archivio/LABS/archetypes/spring-web-archetype/trunk</url>
+		<connection>scm:svn:${SVN_REPO}archivio/LABS/archetypes/spring-web-archetype/trunk</connection>
+	</scm>
+
+	<distributionManagement>
+		<repository>
+			<id>Edenred.it-releases</id>
+			<name>Edenred.it-releases</name>
+			<url>${REPO_RELEASE}</url>
+		</repository>
+		<snapshotRepository>
+			<id>Edenred.it-snapshots</id>
+			<name>Edenred.it-snapshots</name>
+			<url>${REPO_SNAPSHOT}</url>
+		</snapshotRepository>
+	</distributionManagement>
+</project>

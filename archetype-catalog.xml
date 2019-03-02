@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-catalog
+	xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-catalog/1.0.0 http://maven.apache.org/xsd/archetype-catalog-1.0.0.xsd"
+	xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-catalog/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<archetypes>
+		<archetype>
+			<groupId>co.aurasphere.archetypes</groupId>
+			<artifactId>java-quickstart-archetype</artifactId>
+			<version>1.0.0</version>
+			<description>Logback local project.</description>
+		</archetype>
+		<archetype>
+			<groupId>co.aurasphere.archetypes</groupId>
+			<artifactId>maven-library-archetype</artifactId>
+			<version>1.0.0</version>
+			<description>Project with pom.xml configuration ready to be deployed on Maven Central.</description>
+		</archetype>
+		<archetype>
+			<groupId>co.aurasphere.archetypes</groupId>
+			<artifactId>spring-web-archetype</artifactId>
+			<version>1.0.0</version>
+			<description>Spring REST services project with annotation configuration and logback.</description>
+		</archetype>
+		<archetype>
+			<groupId>co.aurasphere.archetypes</groupId>
+			<artifactId>ria-quickstart-archetype</artifactId>
+			<version>1.0.0</version>
+			<description>RIA project based on Spring REST services, MongoDB, AngularJS and Bootstrap with login, security, database and router preconfigured and configuration ready to deploy on Heroku.</description>
+		</archetype>
+	</archetypes>
+</archetype-catalog>

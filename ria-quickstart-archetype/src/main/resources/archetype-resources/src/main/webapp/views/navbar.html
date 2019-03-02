@@ -1,0 +1,19 @@
+<nav
+	class="navbar navbar-dark bg-dark navbar-expand-md navbar-collapse-sm"
+	data-ng-controller="navbarController">
+	<!-- Logo -->
+	<div class="navbar-header col-12 col-sm-2 text-center">
+		<img alt="Logo" src="img/logo.png" class="logo">
+	</div>
+
+	<!-- Menu buttons -->
+	<div class="col-12 col-sm-10 text-center text-sm-right">
+
+		<span data-toggle="modal" data-target="#model-logout" role="button">
+			<i class="fa fa-sign-out fa-2x fa-fw pointer top-icon-link"
+			title="Logout"></i>
+		</span>
+
+	</div>
+	<div data-ng-include="'views/logout-modal.html'"></div>
+</nav>
