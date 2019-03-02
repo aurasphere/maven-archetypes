@@ -203,7 +203,7 @@ public class LoginService {
 		// mail.
 		boolean accountEnabled = userDao.checkAccountEnabled(userEmail);
 		if (accountEnabled) {
-			throw new IllegalStateException("User is already nabled!");
+			throw new IllegalStateException("User is already enabled!");
 		}
 
 		// Message from template.
